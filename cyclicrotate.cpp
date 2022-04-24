@@ -18,7 +18,7 @@ void arrayRotate(int arr[],int size)
         temp = arr[i+1];
         arr[i+1]=arr[i];
         i++;
-        arr[i+1]= temp;
+        // arr[i+1]= temp;
 
     }
 }
