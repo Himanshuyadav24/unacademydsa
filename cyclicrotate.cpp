@@ -19,7 +19,7 @@ void arrayRotate(int arr[],int size)
         arr[i+1]=arr[i];
         i++;
         arr[i+1]= temp;
-
+        
     }
 }
 int main()
