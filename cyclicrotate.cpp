@@ -13,21 +13,21 @@ void arrayRotate(int arr[],int size)
 {
     int i = 0;
     int temp;
-    while (i < size)
+    while (i+1 <= size)
     {   
         temp = arr[i+1];
         arr[i+1]=arr[i];
         i++;
         arr[i+1]= temp;
-        
+
     }
 }
 int main()
 {
-    int arr[7] = {0,1,2,3,4,5,6};
+    int arr[5] = {0,1,2,3,4};
 
-    arrayRotate(arr,7);
-    printArray(arr,7);
+    arrayRotate(arr,5);
+    printArray(arr,5);
 
     return 0;
 }
