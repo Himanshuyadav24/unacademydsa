@@ -12,16 +12,15 @@ int duplicateElement(int arr[],int size)
                 cout<<arr[i]<<" ";
             }
         }
-        
     }
     return 0;
 }
 
 int main()
 {
-    int arr[8] = {56,78,2,2,4,1,56,78};
+    int arr[5] = {1,3,4,2,2};
 
-    duplicateElement(arr,8);
+    duplicateElement(arr,5);
 
     return 0;
 }

@@ -2,12 +2,10 @@
 using namespace std;
 int main()
 {
-    int arr[7] = {1,2,3,3,4,2,1};
+    int arr[6] = {1,2,3,3,2,1};
 
     int i = 0;
-    int j = 6;
-
-
+    int j = 5;
 
     while(i<j)
     {
