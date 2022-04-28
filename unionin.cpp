@@ -8,10 +8,18 @@ int main()
     int i = 0;
     int j = 0;
     int k = 0;
-    
-    int unionArray[13];
+
+    int unionArray[10];
     while (i < 7 && j < 6 && k < 13)
     {
+        if(array[i]==array[i-1])
+        {
+            i++;
+        }
+        if(array1[j]==array1[j-1])
+        {
+            j++;
+        }
         if (array[i] == array1[j])
         {
             unionArray[k] = array[i];
@@ -32,9 +40,10 @@ int main()
             j++;
         }
     }
-    for (int i = 0; i < 13; i++)
+    
+    for (int i = 0; i < 10; i++)
     {
-        cout << unionArray[k] << endl;
+        cout << unionArray[i] << endl;
     }
 
     return 0;
