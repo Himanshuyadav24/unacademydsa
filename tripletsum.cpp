@@ -6,9 +6,9 @@ int getSum(int arr[], int size, int k)
     int temp;
     for (int i = 0; i < 10; i++)
     {
-        for (int j = i+1; j < 10; j++)
+        for (int j = i + 1; j < 10; j++)
         {
-            for (int h = j+1; h < 10; h++)
+            for (int h = j + 1; h < 10; h++)
             {
                 if (arr[i] == arr[j])
                 {
