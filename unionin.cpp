@@ -3,14 +3,14 @@ using namespace std;
 int main()
 {
     int array[7] = {0, 1, 2, 3, 4, 7, 9};
-    int array1[6] = {4, 5, 6, 7, 8, 9};
+    int array1[2] = {0, 1};
 
     int i = 0;
     int j = 0;
     int k = 0;
 
-    int unionArray[10];
-    while (i < 7 && j < 6 && k < 13)
+    int unionArray[9];
+    while (i < 7 && j < 2 && k < 9)
     {
         if(array[i]==array[i-1])
         {
