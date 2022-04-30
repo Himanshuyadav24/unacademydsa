@@ -7,17 +7,14 @@ int getSum(int arr[],int size, int k)
     for (int i = 0; i < 10; i++)
     {
         for (int j = i; j < size; j++)
-        {   
-            if (arr[i]==arr[j])
+        {   if(arr[i]==arr[j])
             {
                 continue;
             }
-            
             if (arr[i]+arr[j]==k)
             {
                 cout<<arr[i]<<","<<arr[j]<<endl;
             }
-            
         }
         
     }
