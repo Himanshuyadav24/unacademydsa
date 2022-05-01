@@ -77,7 +77,6 @@ void Reverse(int arr[3][3], int row, int col)
         }
     }
 }
-
 int main()
 {
     // //array with garbage value
