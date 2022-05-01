@@ -71,6 +71,9 @@ void Reverse(int arr[3][3], int row, int col)
         int end = col - 1;
         while (start < end)
         {
+            swap(arr[i][start],arr[i][end]);
+            start++;
+            end--;
         }
     }
 }
@@ -126,18 +129,18 @@ int main()
 
     Transpose(arr, 3, 3);
 
-    // cout<<"After Transpose"<<endl;
-    // for (int i = 0; i < 3; i++)
-    // {
-    //     for (int j = 0; j < 3; j++)
-    //     {
-    //         cout<<arr[i][j]<<" ";
-    //     }
-    //     cout<<endl;
-    // }
+    cout<<"After Transpose"<<endl;
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            cout<<arr[i][j]<<" ";
+        }
+        cout<<endl;
+    }
 
     cout << endl
-         << "After reverse -> Full rotated image is:" << endl;
+    << "After reverse -> Full rotated image is:" << endl;
     Reverse(arr, 3, 3);
 
     for (int i = 0; i < 3; i++)
