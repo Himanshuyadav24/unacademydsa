@@ -10,12 +10,5 @@ int main()
     
    int size = sizeof(s)/sizeof(s[2]);
    cout<<size<<endl;
-
-
-   
-
-
-
-
     return 0;
 }
