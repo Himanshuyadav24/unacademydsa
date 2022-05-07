@@ -56,19 +56,7 @@
 
 //     }
 // }
-// int main()
-// {
-//     int arr[3][3] = {1,5,9,14,20,23,30,34,43};
 
-//     int n = 3;
-
-//     int m = 3;
-
-//     int target = 34;
-
-//     cout<<search(arr,n,m,target);
-//     return 0;
-// }
 #include<iostream>
 using namespace std;
 bool binarySearch(int arr[][3], int n, int m, int row, int target) {
@@ -125,6 +113,20 @@ bool search(int arr[][3], int row, int col, int target) {
         }
         mid = start + (end - start) / 2;
     }
+ 
     return false;
+}
+   int main()
+{
+    int arr[3][3] = {1,5,9,14,20,23,30,34,43};
+
+    int n = 3;
+
+    int m = 3;
+
+    int target = 34;
+
+    cout<<search(arr,n,m,target);
+    return 0;
 }
 

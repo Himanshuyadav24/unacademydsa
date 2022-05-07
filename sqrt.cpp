@@ -26,13 +26,5 @@ int main()
         }
         mid = start+(end-start)/2;
     }
-    // return 0;
-   
-    
-    
-    
-    
-    
-    
     return 0;
 }
