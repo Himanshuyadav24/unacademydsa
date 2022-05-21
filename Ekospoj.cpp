@@ -1,15 +1,18 @@
 #include <iostream>
 #include<algorithm>
 using namespace std;
+
 bool isPossibleSolution(int mid,int arr[], int n, int target)
 {
-    long long int sum = 0;
+    int sum = 0;
     for (int i = 0; i < n; i++)
     {
         int diff = 0;
+
         if(arr[i]>mid)
+        {
             diff = arr[i] - mid;
-        
+        }
             sum = sum+ diff;
     }
 
@@ -20,8 +23,7 @@ bool isPossibleSolution(int mid,int arr[], int n, int target)
     else
     {
         return false;
-    }
-    
+    }  
 }
 
 int getMaxHeightofSaw(int arr[], int n, int target)
@@ -29,11 +31,14 @@ int getMaxHeightofSaw(int arr[], int n, int target)
     sort(arr, arr + n);
     int s = 0;
     int e = arr[n - 1];
+    
     int ans = -1;
 
+    int mid = s + (e - s) / 2;
+    
     while (s <= e)
     {
-        int mid = s + (e - s) / 2;
+
         if (isPossibleSolution(mid, arr,n ,target))
         {
             ans = mid;
@@ -43,6 +48,8 @@ int getMaxHeightofSaw(int arr[], int n, int target)
         {
             e = mid - 1;
         }
+        mid = s + (e - s) / 2;
+    
     }
     return ans;
 }

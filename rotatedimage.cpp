@@ -31,12 +31,6 @@ int main()
     // for 90 degree rotation.
     Transpose(arr, 3, 3);
     Reverse(arr, 3, 3);
-    // for 180 degree rotation.
-    Transpose(arr, 3, 3);
-    Reverse(arr, 3, 3);
-    // for 270 degree rotation.
-    Transpose(arr, 3, 3);
-    Reverse(arr, 3, 3);
     for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 3; j++)

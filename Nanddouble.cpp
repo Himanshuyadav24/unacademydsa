@@ -1,22 +1,21 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 int main()
 {
-    int arr[4] = {10,2,5,3};
+    int arr[7] = {-2, 0, 10, -19, 4, 6, -8};
 
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < 7; i++)
     {
 
-        for (int j = 0; j < 3; j++)
+        for (int j = i+1; j < 7; j++)
         {
-            if(arr[i]==2*arr[j])
+            if (arr[i] == 2 * arr[j])
             {
-                cout<<"Yes"<<endl;
+                cout<<arr[i]<<" "<<arr[j]<<endl;
+                cout << "Yes" << endl;
                 break;
             }
-
         }
-        
     }
 
     return 0;
