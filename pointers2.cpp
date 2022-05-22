@@ -48,8 +48,8 @@ int main()
     // cout<<*q<<endl;
     // cout<<**q<<endl;
 
-    int  a[4] = {1,2,3,4};
-    int *p = a++;
+    int  arr[4] = {1,2,3,4};
+    int *p = arr++;
     cout<<*p<<endl;
 
 
