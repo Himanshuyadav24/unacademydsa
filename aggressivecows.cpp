@@ -2,7 +2,7 @@
 // {
 //     int cowCount = 1;
 //     int lastPos = stalls[0];
-    
+
 //     for(int i = 1; i<stalls.size(); i++)
 //     {
 //         if(stalls[i] - lastPos >= mid)
@@ -32,10 +32,10 @@
 //     {
 //         mini = min(mini,stalls[i]);
 //     }
-   
+
 //     int e = maxi-mini;
 //     int ans = -1;
-    
+
 //     int mid = s+(e-s)/2;
 //     while(s<=e)
 //     {

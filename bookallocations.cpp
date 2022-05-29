@@ -3,9 +3,9 @@
 // {
 //     int pagesum = 0;
 //     int studentCount = 1;
-    
+
 //     for(int i = 0; i<n; i++)
-//     {    
+//     {
 //         if(pagesum+arr[i]<=mid)
 //         {
 //             pagesum += arr[i];
@@ -17,14 +17,13 @@
 //             {
 //                 return false;
 //             }
-                // pagesum = 0;
+// pagesum = 0;
 //             pagesum += arr[i];
 //         }
 //     }
 //     return true;
-    
-// }
 
+// }
 
 // int allocateBooks(vector<int> arr, int n, int m) {
 //     int s = 0;
@@ -35,9 +34,9 @@
 //         sum += arr[i];
 //     }
 //     int e = sum;
-    
+
 //     int mid = s+(e-s)/2;
-    
+
 //     while(s<=e)
 //     {
 //         if(isPossibleSolution(arr,n,m,mid))
@@ -52,5 +51,5 @@
 //         mid = s+(e-s)/2;
 //     }
 //     return ans;
-    
+
 // }
