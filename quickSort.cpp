@@ -52,7 +52,7 @@ void quickSort(int arr[], int s, int e) {
     if(s >= e) 
     {
         return;
-    }
+    } 
 
     int pIndex = partition(arr, s, e);
 
@@ -61,9 +61,7 @@ void quickSort(int arr[], int s, int e) {
 
     //right
     quickSort(arr, pIndex+1, e);
-
 }
-
 
 int main() {
 
@@ -75,7 +73,6 @@ int main() {
     for(int i=0; i<size; i++) {
         cout << arr[i] << " ";
     }cout << endl;
-
 
     return 0;
 }

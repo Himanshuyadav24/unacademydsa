@@ -1,9 +1,8 @@
-#include <iostream>
+#include <iostream>      
 using namespace std;
 
 void merge(int arr[], int s, int e)
 {
-
     int mid = (s + e) / 2;
 
     int leftLength = mid - s + 1;
@@ -83,7 +82,6 @@ void mergeSort(int arr[], int s, int e)
 
 int main()
 {
-
     int arr[] = {12, 11, 13, 5, 6, 7};
     int size = 6;
 

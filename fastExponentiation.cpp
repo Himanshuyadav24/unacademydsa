@@ -26,7 +26,7 @@ int main()
     cout << endl
          << "Enter the power" << endl;
     cin >> n;
-
+    // cout<<fact[2];
     cout << endl
          << x << "'s power " << n << " is:- " << fastexpo(x, n) << endl;
 
