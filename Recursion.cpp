@@ -1,55 +1,60 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int factorial(int n) {
-    //base case
-    //assuming n > 0
-    if(n == 1) {
-        return 1;
-    }
+// int factorial(int n) {
+//     //base case
+//     //assuming n > 0
+//     if(n == 1) {
+//         return 1;
+//     }
 
-    return n * factorial(n-1);
-}
+//     // processing
 
-void print(int n) {
-    //base case
-    if(n < 1) 
+//     // recursive relation
+//     return n * factorial(n-1);
+
+// }
+
+void print(int n)
+{
+    // base case
+    if (n < 1)
     {
         return;
     }
 
-    //RR
-    print(n-1);
+    // RR
+    print(n - 1);
 
-    //processing
-    cout << n << " ";
-
+    // processing
+    cout << n << " " << endl;
 }
 
-int expo( int n) {
-    //BaSE CASE
-    if( n == 0) 
-        return 1;
+// int expo( int n) {
+//     //BaSE CASE
+//     if( n == 0)
+//         return 1;
 
-    int smallerProblemAns = expo(n/2);
+//     int smallerProblemAns = expo(n/2);
 
-    if(n&1)
-        return smallerProblemAns * smallerProblemAns * 2;
-    else
-        return smallerProblemAns * smallerProblemAns;
-}
+//     if(n&1)
+//         return smallerProblemAns * smallerProblemAns * 2;
+//     else
+//         return smallerProblemAns * smallerProblemAns;
+// }
 
-int main() {
-    
+int main()
+{
+
     // int n;
     // cout << "enter the value of n " << endl;
     // cin >> n;
 
-    //cout << "Factorial of n is " << factorial(n) << endl;
+    // cout << "Factorial of n is " << factorial(n) << endl;
 
-    // print(5);
+    print(5);
     // cout << endl;
-    cout << "ans is " << expo(11) << endl;
+    // cout << "ans is " << expo(11) << endl;
 
     return 0;
 }
